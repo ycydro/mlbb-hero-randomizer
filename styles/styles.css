@@ -1,6 +1,7 @@
 html {
    background: linear-gradient(-45deg, #087d95, #520657, #087d95, #520657);
    background-size: 400% 400%;
+   background-color: #087d95;
    animation: gradient 15s ease infinite;
    min-height: 100%;
    font-family: "Poppins", sans-serif;
