@@ -30,10 +30,10 @@ function roll(data) {
    }, 35);
 
     // stop rolling after 1 second
-    setTimeout(function() {
+   setTimeout(function() {
       document.getElementById("load-hero-button").disabled = false;
       stopRolling();
-     }, 1000)
+   }, 1000)
 }
 
 
@@ -53,7 +53,7 @@ function useHeroData(data) {
 
    const randomHero = heroesAscendingOrder[getRandomInt(0, heroesAscendingOrder.length - 1)]
 
-   console.log(randomHero);
+   // console.log(randomHero);
    render(randomHero);
 }
 

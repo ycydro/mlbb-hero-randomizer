@@ -1,6 +1,26 @@
 {
    "heroes":[
       {
+         "name":"Kalea",
+         "heroid":"128",
+         "key":"//akmweb.youngjoygame.com/web/gms/image/f81399d64f2916499d853ca32c85902d.jpg?w=200-200-23181c"
+      },
+      {
+         "name":"Lukas",
+         "heroid":"127",
+         "key":"//akmweb.youngjoygame.com/web/gms/image/12a9a4f54f6f0e874a7ee51a84eda237.jpg?w=200-200-23181c"
+      },
+      {
+         "name":"Suyou",
+         "heroid":"126",
+         "key":"//akmweb.youngjoygame.com/web/gms/image/1cce8eefc4b4c738e8aafafff6bafc84.png?w=200-200-23181c"
+      },
+      {
+         "name":"Zhuxin",
+         "heroid":"125",
+         "key":"//akmweb.youngjoygame.com/web/gms/image/dc19d6cdeb31fe8889d51a0c184a069a.jpg?w=200-200-23181c"
+      },
+      {
          "name":"Chip",
          "heroid":"124",
          "key":"//akmweb.youngjoygame.com/web/madmin/image/2daca928703774862b329074220fe7cd.png?w=200-200-23181c"
