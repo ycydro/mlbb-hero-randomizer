@@ -2,10 +2,14 @@ let heroesData;
 let intervalId;
 
 document.getElementById("load-hero-button").addEventListener("click", function() {
-   this.disabled = true;
-   this.innerHTML = 'Rolling...'
-   loadHeroData();
-});
+      this.disabled = true;
+      this.innerHTML = 'Rolling...'
+      if (!heroesData) {
+         loadHeroData();
+      } else {
+         roll(heroesData);
+      }
+   });
 
 async function loadHeroData() {
   try {
@@ -13,20 +17,25 @@ async function loadHeroData() {
     heroesData = await response.json();  // saves the JSON data to heroesData
 
     // roll random heroes per 50 milliseconds
-    intervalId = setInterval(function() {
-    useHeroData(heroesData);
-   }, 35);
-
-   // stop rolling after 1 second
-   setTimeout(function() {
-      document.getElementById("load-hero-button").disabled = false;
-      stopRolling();
-     }, 1000);
+   roll(heroesData);
 
    } catch (error) {
     console.error('Error loading JSON:', error);
   }
 }
+
+function roll(data) {
+   intervalId = setInterval(function() {
+      useHeroData(data);
+   }, 35);
+
+    // stop rolling after 1 second
+    setTimeout(function() {
+      document.getElementById("load-hero-button").disabled = false;
+      stopRolling();
+     }, 1000)
+}
+
 
 function stopRolling() {
    if (!intervalId) {
